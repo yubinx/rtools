@@ -3,8 +3,10 @@
 #' This function concatenates multiple csv files (of the same structure) into a master file
 #' @param list of paths to the csv files
 #' @keywords concatenate
-#' @export
 #' @examples
+#' filenames <- list.files(path = path, pattern="df_individual", recursive=T,full.names = T)
+#' df<-concat_csv(filenames)
+#' fwrite(df, paste0(path,"/", "df_master.csv"))
 
 
 #   Install Package:           'Cmd + Shift + B'
